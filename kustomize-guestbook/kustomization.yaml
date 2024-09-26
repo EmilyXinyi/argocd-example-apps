@@ -9,7 +9,7 @@ kind: Kustomization
 patches:
   - target:
       kind: Deployment
-      name: guestbook
+      name: guestbook-ui
     patch: |-
       - op: replace
         path: /spec/replicas
