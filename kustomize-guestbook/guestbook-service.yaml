@@ -5,7 +5,7 @@ metadata:
   namespace: argocd  
 spec:
   selector:
-    app: kustomize-guestbook-emily     # The selector should match labels of the Pods
+    app: guestbook-ui     # The selector should match labels of the Pods
   ports:
     - protocol: TCP
       port: 80        
