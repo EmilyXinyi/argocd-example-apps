@@ -5,3 +5,11 @@ resources:
   - argocd-service.yaml
 apiVersion: kustomize.toolkit.fluxcd.io/Kustomization/v1beta1
 kind: Kustomization
+spec:
+  interval: 10s
+  path: "./argocd-bootstrap/base"
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: argocd
+    namespace: argocd
