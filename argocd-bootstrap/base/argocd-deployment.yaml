@@ -17,7 +17,7 @@ spec:
         - name: argocd-server
           image: argoproj/argocd:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           env:
             - name: ARGOCD_SERVER
               value: "argocd-server"
