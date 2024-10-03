@@ -4,14 +4,10 @@ metadata:
   name: app-of-apps
 spec:
   destination:
-    name: in-cluster
+    server: https://kubernetes.default.svc
     namespace: argocd
   source:
     path: child-apps
     repoURL: 'https://github.com/EmilyXinyi/argocd-example-apps.git'
     targetRevision: HEAD
   project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
