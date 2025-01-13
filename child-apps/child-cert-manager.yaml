@@ -17,8 +17,7 @@ spec:
           value: 'true'
   destination:
     namespace: child-cert-manager
-    # server: https://kubernetes.default.svc
-    name: in-cluster
+    name: my-cluster
   syncPolicy:
     automated: {}
     syncOptions:
