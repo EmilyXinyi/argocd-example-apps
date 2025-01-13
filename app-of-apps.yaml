@@ -4,7 +4,7 @@ metadata:
   name: app-of-apps-demo
 spec:
   destination:
-    name: my-cluster
+    name: in-cluster
     namespace: argocd
   source:
     path: child-apps

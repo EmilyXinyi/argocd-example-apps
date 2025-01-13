@@ -17,7 +17,7 @@ spec:
           value: 'true'
   destination:
     namespace: child-cert-manager
-    name: my-cluster
+    name: in-cluster
   syncPolicy:
     automated: {}
     syncOptions:
