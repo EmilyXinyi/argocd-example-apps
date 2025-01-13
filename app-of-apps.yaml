@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: migration-test-aoa
+  name: app-of-apps-demo
 spec:
   destination:
     name: in-cluster
